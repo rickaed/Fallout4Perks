@@ -4,7 +4,7 @@
         perks: [
             {
                 rank: 1,
-                name: 'Iron Fist',
+                name: 'Poing de fer',
                 img: 'iron-fist.png',
                 ranks: 5,
                 ranked: [
@@ -37,7 +37,7 @@
             },
             {
                 rank: 2,
-                name: 'Big Leagues',
+                name: 'Force de frappe',
                 img: 'big-leagues.png',
                 ranks: 5,
                 ranked: [
@@ -64,71 +64,71 @@
                     {
                         rank: 5,
                         level: 42,
-                        description: 'Les armes de corps à corps infligent deux fois plus de dégâts et ont une chance de rendre infirme ou d'exploser la tête de la cible façon grand chelem !'
+                        description: 'Les armes de corps à corps infligent deux fois plus de dégâts et ont une chance de rendre infirme ou d\'exploser la tête de la cible façon grand chelem !'
                     }
                 ]
             },
             {
                 rank: 3,
-                name: 'Armorer',
+                name: 'Armurier',
                 img: 'armorer.png',
                 ranks: 4,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: 'Protect yourself from the dangers of the Wasteland with access to base level and Rank 1 armor mods.'
+                        description: 'Protégez-vous des dangers des Terres désolées avec les modules d\'armure de base et de rang 1.'
                     },
                     {
                         rank: 2,
                         level: 13,
-                        description: 'You gain access to Rank 2 armor mods'
+                        description: 'Vous pouvez accéder aux modules d\'armure de rang 2.'
                     },
                     {
                         rank: 3,
                         level: 25,
-                        description: 'You gain access to Rank 3 armor mods'
+                        description: 'Vous pouvez accéder aux modules d\'armure de rang 3.'
                     },
                     {
                         rank: 4,
                         level: 39,
-                        description: 'You gain access to Rank 4 armor mods'
+                        description: 'Vous pouvez accéder aux modules d\'armure de rang 4.'
                     }
                 ]
             },
             {
                 rank: 4,
-                name: 'Blacksmith',
+                name: 'Forgeron',
                 img: 'blacksmith.png',
                 ranks: 3,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: 'Fire up the forge and gain access to base level and Rank 1 melee weapon mods.'
+                        description: 'Allumez la forge et accédez aux modules d\'armes de corps à corps de base et de rang 1.'
                     },
                     {
                         rank: 2,
                         level: 16,
-                        description: 'You gain access to Rank 2 melee weapon mods'
+                        description: 'Vous pouvez accéder aux modules d\'armes de corps à corps de rang 2.'
                     },
                     {
                         rank: 3,
                         level: 29,
-                        description: 'You gain access to Rank 3 melee weapon mods'
+                        description: 'Vous pouvez accéder aux modules d\'armes de corps à corps de rang 3.'
                     }
                 ]
             },
             {
                 rank: 5,
-                name: 'Heavy Gunner',
+                name: 'Artillerie lourde',
                 img: 'heavy-gunner.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: 'Thanks to practice and conditioning, heavy guns do 20% more damage.'
+                        description: 'Grâce à un conditionnement et un entraînement rigoureux, les armes lourdes infligent 20% de dégâts supplémentaires.'
                     },
                     {
                         rank: 2,
