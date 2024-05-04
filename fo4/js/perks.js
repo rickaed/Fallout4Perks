@@ -11,27 +11,27 @@
                     {
                         rank: 1,
                         level: 0,
-                        description: 'Channel your chi to unleash devastating fury! Punching attacks now do 20% more damage.'
+                        description: 'Canalisez votre chi pour déchaîner la fureur du dragon ! Les coups de poing infligent 20% de dégâts supplémentaires.'
                     },
                     {
                         rank: 2,
                         level: 9,
-                        description: 'Punching attacks now do 40% more damage and can disarm your opponent.'
+                        description: 'Les coups de poing infligent 40% de dégâts supplémentaires et peuvent désarmer la cible.'
                     },
                     {
                         rank: 3,
                         level: 18,
-                        description: 'Punching attacks now do 60% more damage. Unarmed Power Attacks have a chance to cripple one of your opponent\'s limbs.'
+                        description: 'Les coups de poing infligent 60% de dégâts supplémentaires. Les attaques puissantes à mains nues ont une chance de rendre infirme.'
                     },
                     {
                         rank: 4,
                         level: 31,
-                        description: 'Attacks made with fists or weapons worn on the hands 80% more damage. Unarmed Power Attacks have an increased chance to cripple one of your opponent\'s limbs.'
+                        description: 'Les coups de poing infligent 80% de dégâts supplémentaires et les attaques puissantes à mains nues ont plus de chances de rendre infirme.'
                     },
                     {
                         rank: 5,
                         level: 46,
-                        description: 'Attacks made with fists or weapons worn on the hands inflict 100% more damage. Criticals in V.A.T.S. will paralyse your opponents.'
+                        description: 'Les coups de poing infligent deux fois plus de dégâts. Les coups critiques en mode SVAV paralysent la cible.'
                     }
                 ]
             },
@@ -44,27 +44,27 @@
                     {
                         rank: 1,
                         level: 0,
-                        description: 'Swing for the fences! Do 20% more melee weapon damage.'
+                        description: 'Travaillez votre swing pour frapper un grand coup ! Les armes de corps à corps infligent 20% de dégâts supplémentaires.'
                     },
                     {
                         rank: 2,
                         level: 7,
-                        description: 'You now do 40% more melee weapon damage and gain a chance to disarm your opponent.'
+                        description: 'Les armes de corps à corps infligent 40% de dégâts supplémentaires et ont une chance de désarmer la cible.'
                     },
                     {
                         rank: 3,
                         level: 15,
-                        description: 'You now do 60% more melee weapon damage and gain an increased chance to disarm your opponent.'
+                        description: 'Les armes de corps à corps infligent 60% de dégâts supplémentaires et ont une meilleure chance de désarmer la cible.'
                     },
                     {
                         rank: 4,
                         level: 27,
-                        description: 'You now do 80% more melee weapon damage and hit all targets in front of you.'
+                        description: 'Les armes de corps à corps infligent 80% de dégâts supplémentaires et touchent toutes les cibles situées devant vous.'
                     },
                     {
                         rank: 5,
                         level: 42,
-                        description: 'You now do double damage with a melee weapon, and gain a chance to cripple your opponent, or grand slam their head clean off!'
+                        description: 'Les armes de corps à corps infligent deux fois plus de dégâts et ont une chance de rendre infirme ou d'exploser la tête de la cible façon grand chelem !'
                     }
                 ]
             },
