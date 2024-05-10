@@ -1,286 +1,435 @@
-console.log('DEBUG PERK');
-console.log('perk =>',lang[userLang].st.l1.name);
-const perks = [
+﻿const perks = [
     {
         special: 'st',
         perks: [
             {
                 rank: 1,
-                name: lang[userLang].st.l1.name,
+                name: {
+                    en:'Iron Fist',
+                    fr:'Poing de fer'
+                },
                 img: 'iron-fist.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l1.rank1
+                        description: {
+                            en:'Channel your chi to unleash devastating fury! Punching attacks now do 20% more damage.',
+                            fr :'Canalisez votre chi pour déchaîner la fureur du dragon ! Les coups de poing infligent 20% de dégâts supplémentaires.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 9,
-                        description: lang[userLang].st.l1.rank2
+                        description: {
+                            en:'Punching attacks now do 40% more damage and can disarm your opponent.',
+                            fr:'Les coups de poing infligent 40% de dégâts supplémentaires et peuvent désarmer la cible.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 18,
-                        description: lang[userLang].st.l1.rank3
+                        description: {
+                            en:'Punching attacks now do 60% more damage. Unarmed Power Attacks have a chance to cripple one of your opponent\'s limbs.', 
+                            fr: 'Les coups de poing infligent 60% de dégâts supplémentaires. Les attaques puissantes à mains nues ont une chance de rendre infirme.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 31,
-                        description: lang[userLang].st.l1.rank4
+                        description: {                            
+                            en:'Attacks made with fists or weapons worn on the hands 80% more damage. Unarmed Power Attacks have an increased chance to cripple one of your opponent\'s limbs.',
+                            fr:'Les coups de poing infligent 80% de dégâts supplémentaires et les attaques puissantes à mains nues ont plus de chances de rendre infirme.'
+                        }
                     },
                     {
                         rank: 5,
                         level: 46,
-                        description: lang[userLang].st.l1.rank5
+                        description: 
+                        {
+                            en:'Attacks made with fists or weapons worn on the hands inflict 100% more damage. Criticals in V.A.T.S. will paralyse your opponents.',
+                            fr:'Les coups de poing infligent deux fois plus de dégâts. Les coups critiques en mode SVAV paralysent la cible.'
+                        }
                     }
                 ]
             },
             {
                 rank: 2,
-                name: lang[userLang].st.l2.name,
+                name: {
+                    en:'Big Leagues',
+                    fr:'Force de frappe'
+                },
                 img: 'big-leagues.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l2.rank1
+                        description: {
+                            en:'Swing for the fences! Do 20% more melee weapon damage.',
+                            fr:'Travaillez votre swing pour frapper un grand coup ! Les armes de corps à corps infligent 20% de dégâts supplémentaires.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 7,
-                        description: lang[userLang].st.l2.rank2
+                        description: {
+                            en:'You now do 40% more melee weapon damage and gain a chance to disarm your opponent.',
+                            fr:'Les armes de corps à corps infligent 40% de dégâts supplémentaires et ont une chance de désarmer la cible.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 15,
-                        description: lang[userLang].st.l2.rank3
+                        description: {
+                            en:'You now do 60% more melee weapon damage and gain an increased chance to disarm your opponent.',
+                            fr:'Les armes de corps à corps infligent 60% de dégâts supplémentaires et ont une meilleure chance de désarmer la cible.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 27,
-                        description: lang[userLang].st.l2.rank4
+                        description: {
+                            en:'You now do 80% more melee weapon damage and hit all targets in front of you.',
+                            fr:'Les armes de corps à corps infligent 80% de dégâts supplémentaires et touchent toutes les cibles situées devant vous.'
+                        }
                     },
                     {
                         rank: 5,
                         level: 42,
-                        description: lang[userLang].st.l2.rank5
+                        description: {
+                            en:'You now do double damage with a melee weapon, and gain a chance to cripple your opponent, or grand slam their head clean off!',
+                            fr:'Les armes de corps à corps infligent deux fois plus de dégâts et ont une chance de rendre infirme ou d\'exploser la tête de la cible façon grand chelem !'
+                        }
                     }
                 ]
             },
             {
                 rank: 3,
-                name: lang[userLang].st.l3.name,
+                name: {
+                    en:'Armorer',
+                    fr:'Armurier'
+                },
                 img: 'armorer.png',
                 ranks: 4,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l3.rank1
+                        description: {
+                            en : 'Protect yourself from the dangers of the Wasteland with access to base level and Rank 1 armor mods.',
+                            fr:'Protégez-vous des dangers des Terres désolées avec les modules d\'armure de base et de rang 1.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 13,
-                        description: lang[userLang].st.l3.rank2
+                        description: {
+                            en : 'You gain access to Rank 2 armor mods',
+                            fr:'Vous pouvez accéder aux modules d\'armure de rang 2.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 25,
-                        description: lang[userLang].st.l3.rank3
+                        description: {
+                            en : 'You gain access to Rank 3 armor mods',
+                            fr:'Vous pouvez accéder aux modules d\'armure de rang 3.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 39,
-                        description: lang[userLang].st.l3.rank4
+                        description: {
+                            en : 'You gain access to Rank 4 armor mods',
+                            fr:'Vous pouvez accéder aux modules d\'armure de rang 4.'
+                        }
                     }
                 ]
             },
             {
                 rank: 4,
-                name: lang[userLang].st.l4.name,
+                name: {
+                    en:'Blacksmith',
+                    fr:'Forgeron'
+                },
                 img: 'blacksmith.png',
                 ranks: 3,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l4.rank1
+                        description: {
+                            en:'Fire up the forge and gain access to base level and Rank 1 melee weapon mods.',
+                            fr:'Allumez la forge et accédez aux modules d\'armes de corps à corps de base et de rang 1.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 16,
-                        description: lang[userLang].st.l4.rank2
+                        description: {
+                            en:'You gain access to Rank 2 melee weapon mods',
+                            fr:'Vous pouvez accéder aux modules d\'armes de corps à corps de rang 2.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 29,
-                        description: lang[userLang].st.l4.rank3
+                        description: {
+                            en:'You gain access to Rank 3 melee weapon mods',
+                            fr:'Vous pouvez accéder aux modules d\'armes de corps à corps de rang 3.'
+                        }
                     }
                 ]
             },
             {
                 rank: 5,
-                name: lang[userLang].st.l5.name,
+                name: {
+                    en:'Heavy Gunner',
+                    fr:'Artillerie lourde'
+                },
                 img: 'heavy-gunner.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l5.rank1
+                        description: {
+                            en:'Thanks to practice and conditioning, heavy guns do 20% more damage.',
+                            fr:'Grâce à un conditionnement et un entraînement rigoureux, les armes lourdes infligent 20% de dégâts supplémentaires.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 11,
-                        description: lang[userLang].st.l5.rank2
+                        description: {
+                            en:'Heavy guns now do 40% more damage, and have improved hip fire accuracy.',
+                            fr:'Les armes lourdes infligent 40% de dégâts supplémentaires et ont une meilleure précision au tir au jugé.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 21,
-                        description: lang[userLang].st.l5.rank3
+                        description: {
+                            en:'Heavy guns now do 60% more damage. Hip fire accuracy is increased even more.',
+                            fr:'Les armes lourdes infligent 60% de dégâts supplémentaires et ont une précision encore meilleure au tir au jugé.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 35,
-                        description: lang[userLang].st.l5.rank4
+                        description: {
+                            en:'Heavy guns now do 80% more damage and have a chance to stagger your opponent.',
+                            fr:'Les armes lourdes infligent 80% de dégâts supplémentaires et ont une chance de faire vaciller la cible.'
+                        }
                     },
                     {
                         rank: 5,
                         level: 47,
-                        description: lang[userLang].st.l5.rank5
+                        description: {
+                            en:'Heavy guns now do double damage.',
+                            fr:'Les armes lourdes infligent deux fois plus de dégâts.'
+                        }
                     }
                 ]
             },
             {
                 rank: 6,
-                name: lang[userLang].st.l6.name,
+                name: {
+                    en:'Strong Back',
+                    fr:'Reins d\'acier'
+                },
                 img: 'strong-back.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l6.rank1
+                        description: {
+                            en:'What are you, part pack mule? Gain +25 to carry weight',
+                            fr:'Un vrai cheval de trait ! Votre charge maximale augmente de 25.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 10,
-                        description: lang[userLang].st.l6.rank2
+                        description: {
+                            en:'You now have +50 to carry weight.',
+                            fr:'Votre charge maximale augmente de 50.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 20,
-                        description: lang[userLang].st.l6.rank3
+                        description: {
+                            en:'When overencumbered, you can use Action Points to run.',
+                            fr:'Quand vous êtes en surcharge, vous pouvez utiliser des points d\'action pour courir.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 30,
-                        description: lang[userLang].st.l6.rank4
+                        description: {
+                            en:'When overencumbered, you can fast travel.',
+                            fr:'Vous pouvez voyager rapidement tout en étant en surcharge.'
+                        }
                     },
                     {
                         rank: 5,
                         level: 40,
-                        description: lang[userLang].st.l6.rank5
+                        description: {
+                            en:'When overencumbered, running costs 50% less action points.(Far Harbor DLC)',
+                            fr:'Réduit de 20% le nombre de points d\'actions nécessaires pour sprinter quand vous êtes en surcharge.(Far Harbor DLC)'
+                        }
                     }
                 ]
             },
             {
                 rank: 7,
-                name: lang[userLang].st.l7.name,
+                name: {
+                    en:'Steady Aim',
+                    fr:'Visée stable'
+                },
                 img: 'steady-aim.png',
                 ranks: 3,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description:lang[userLang].st.l7.rank1
+                        description:{
+                            en:'Stay on target! Hip-fire accuracy is improved when firing any gun.',
+                            fr:'Restez sur votre cible ! Votre précision au tir au jugé est meilleure avec toutes les armes.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 28,
-                        description:lang[userLang].st.l7.rank2
+                        description:{
+                            en:'Hip-fire accuracy is improved even more when firing any gun.',
+                            fr:'Votre précision de tir au jugé est encore meilleure avec toutes les armes.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 49,
-                        description:lang[userLang].st.l7.rank3
+                        description:{
+                            en:'Hip-fire accuracy is improved when firing any gun.(Nuka-World DLC)',
+                            fr:'Vos dégâts de tir au jugé sont améliorés avec toutes les armes.(Nuka-World DLC)'
+                        }
                     }
                 ]
             },
             {
                 rank: 8,
-                name: lang[userLang].st.l8.name,
+                name: {
+                    en:'Basher',
+                    fr:'Cogneur'
+                },
                 img: 'basher.png',
                 ranks: 4,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l8.rank1
+                        description: {
+                            en:'Get up close and personal! Gun bashing does 25% more damage.',
+                            fr:'Plongez dans la mêlée ! Les coups de crosse infligent 25% de dégâts supplémentaires.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 5,
-                        description: lang[userLang].st.l8.rank2
+                        description: {
+                            en:'Gun bashing now does 50% more damage and possibly cripples your opponent.',
+                            fr:'Les coups de crosse infligent 50% de dégâts supplémentaires et ont une chance de rendre infirme.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 14,
-                        description: lang[userLang].st.l8.rank3
+                        description: {
+                            en:'Gun bashing now does 75% more damage and has an increased chance to cripple your opponent.',
+                            fr:'Les coups de crosse infligent 75% de dégâts supplémentaires et ont une meilleure chance de rendre infirme.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 26,
-                        description: lang[userLang].st.l8.rank4
+                        description: {
+                            en:'Gun bashing does double damage and has an increased chance to cripple your opponent. It may also inflict a Critical Hit.',
+                            fr:'Les coups de crosse infligent deux fois plus de dégâts, ont une meilleure chance de rendre infirme et peuvent infliger un coup critique.'
+                        }
                     }
                 ]
             },
             {
                 rank: 9,
-                name: lang[userLang].st.l9.name,
+                name: {
+                    en:'Rooted',
+                    fr:'Stabilité'
+                },
                 img: 'rooted.png',
                 ranks: 3,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].st.l9.rank1
+                        description: {
+                            en:'You\'re part tree! While standing still, you gain +25 Damage Resistance and your melee and unarmed attacks deal 25% more damage.',
+                            fr:'Lorsque vous êtes immobile, votre résistance aux dégâts augmente de 25 et vos attaques au corps à corps et à mains nues infligent 25% de dégâts supplémentaires.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 22,
-                        description: lang[userLang].st.l9.rank2
+                        description: {
+                            en:'While standing still, you now gain +50 Damage Resistance and your melee and unarmed attacks deal 50% more damage.',
+                            fr:'Lorsque vous êtes immobile, votre résistance aux dégâts augmente de 50 et vos attaques au corps à corps et à mains nues infligent 50% de dégâts supplémentaires. '
+                        }
                     },
                     {
                         rank: 3,
                         level: 43,
-                        description: lang[userLang].st.l9.rank3
+                        description: {
+                            en:'While standing still, you may automatically disarm enemies that use melee weapons against you.',
+                            fr:'Lorsque vous êtes immobile, il se peut que vous désarmiez automatiquement les ennemis qui utilisent des armes de corps à corps contre vous. '
+                        }
                     }
                 ]
             },
             {
                 rank: 10,
-                name: lang[userLang].st.l10.name,
+                name: {
+                    en:'Pain Train',
+                    fr:'Locomotive'
+                },
                 img: 'pain-train.png',
                 ranks: 3,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description:lang[userLang].st.l10.rank1
+                        description:{
+                            en:'Choo Choo! All aboard! While wearing Power Armor,sprinting into enemies hurts and staggers them. (Robots and oversized enemies are immune to the stagger.)',
+                            fr:'Tchou tchou ! Équipé de votre armure assistée, foncez sur les ennemis pour leur infliger des dégâts et les faire vaciller. ne fonctionne pas sur les robots et ennemis de très grand taille.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 24,
-                        description:lang[userLang].st.l10.rank2
+                        description:{
+                            en:'Sprinting into enemies while wearing Power Armor now causes severe damage and a more powerful stagger. (Robots and oversized enemies are immune to the stagger.)',
+                            fr:'Foncer sur une cible en sprintant avec une armure assistée inflige des dégâts et la fait vaciller plus efficacement. Ne fonctionne pas sur les robots et ennemis de très grande taille.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 50,
-                        description:lang[userLang].st.l10.rank3
+                        description:{
+                            en:'Sprinting into enemies while wearing Power Armor now causes massive damage and knocks them down. Impact landing near enemies inflicts even more damage.',
+                            fr:'Foncer dans une cible en sprintant avec une armure assistée inflige d\'énormes dégâts et la renverse. L\'impact au sol est encore plus dévastateur.'
+                        }
                     }
                 ]
             }
@@ -291,86 +440,131 @@ const perks = [
         perks: [
             {
                 rank: 1,
-                name: lang[userLang].pe.l1.name,
+                name: {
+                    en:'Pickpocket',
+                    fr:'Pickpocket'
+                },
                 img: 'pickpocket.png',
                 ranks: 4,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].pe.l1.rank1
+                        description: {
+                            en:'Your quick hands and sticky fingers make picking pockets 25% easier.',
+                            fr:'Grâce à vos doigts agiles et crochus, faire les poches est 25% plus facile.'
+                        }
                     },
                     {
                         rank: 2,
                         level: 6,
-                        description: lang[userLang].pe.l1.rank2
+                        description: {
+                            en:'Picking pockets is now 50% easier. You can place a live grenade in a person\'s inventory.',
+                            fr:'Faire les poches est 50% plus facile et vous pouvez placer une grande dégoupillée dans l\'inventaire de la cible.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 17,
-                        description: lang[userLang].pe.l1.rank3
+                        description: {
+                            en:'Picking pockets is now 75% easier, and you can steal equipped weapons.',
+                            fr:'Faire les poches est 50% plus facile et vous pouvez voler les armes équipées par la cible.'
+                        }
                     },
                     {
                         rank: 4,
                         level: 30,
-                        description: lang[userLang].pe.l1.rank4
+                        description: {
+                            en:'Picking pockets is now twice as easy, and you can steal equipped items.',
+                            fr:'Faire les poches est deux fois plus facile et vous pouvez voler les objets équipés par la cible.'
+                        }
                     }
                 ]
             },
             {
                 rank: 2,
-                name: lang[userLang].pe.l2.name,
+                name: {
+                    en:'Rifleman',
+                    fr:'Fusilier'
+                },
                 img: 'rifleman.png',
                 ranks: 5,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].pe.l2.rank1
+                        description: {
+                            en:'Keep your distance long and your kill-count high. Attacks with non-automatic rifles do 20% more damage',
+                            fr:'Restez à bonne distance de l\'ennemi et visez toujours dans le mille. Les fusils non automatiques infligent 20% de dégâts supplémentaires. '
+                        }
                     },
                     {
                         rank: 2,
                         level: 9,
-                        description: lang[userLang].pe.l2.rank2
+                        description: {
+                            en:'Attacks with non-automatic rifles do 40% more damage and ignore 15% of a target\'s armor.',
+                            fr:'Les fusils non automatiques infligent 40% de dégâts supplémentaires et ignorent 15% de l\'armure de la cible.'
+                        }
                     },
                     {
                         rank: 3,
                         level: 18,
-                        description:  lang[userLang].pe.l2.rank3
+                        description:  {
+                            en:'Attacks with non-automatic rifles do 60% more damage and ignore 20% of a target\'s armor.',
+                            fr:'Les fusils non automatiques infligent 60% de dégâts supplémentaires et ignorent 20% de l\'armure de la cible. '
+                        }
                     },
                     {
                         rank: 4,
                         level: 31,
-                        description:  lang[userLang].pe.l2.rank4
+                        description:  {
+                            en:'Attacks with non-automatic rifles do 80% more damage and ignore 25% of a target\'s armor. They also have a slight chance of crippling a limb.',
+                            fr:'Les fusils non automatiques infligent 80% de dégâts supplémentaires, ignorent 25% de l\'armure de la cible et ont une petite chance de rendre infirme.'
+                        }
                     },
                     {
                         rank: 5,
                         level: 46,
-                        description:  lang[userLang].pe.l2.rank5
+                        description:  {
+                            en:'Attacks with non-automatic rifles do double damage and ignore 30% of a target\'s armor. They also have a slightly higher chance of crippling a limb.',
+                            fr:'Les fusils non automatiques infligent deux fois plus de dégâts, ignorent 30% de l\'armure de la cible et ont légèrement plus de chances de rendre infirme.'
+                        }
                     }
                 ]
             },
             {
                 rank: 3,
-                name: lang[userLang].pe.l3.name,
+                name: {
+                    en:'Awareness',
+                    fr:'Sens affûtés'
+                },
                 img: 'awareness.png',
                 ranks: 2,
                 ranked: [
                     {
                         rank: 1,
                         level: 0,
-                        description: lang[userLang].pe.l3.rank1
+                        description: {
+                            en:'To defeat your enemies, know their weaknesses! You can view a target\'s specific damage resistances in V.A.T.S.',
+                            fr:'Pour vaincre l\'ennemi, il faut connaître ses faiblesses ! Les résistances de la cible sont affichées en SVAV.'
+                        },
                     },
                     {
                         rank: 2,
                         level: 14,
-                        description: lang[userLang].pe.l3.rank2
+                        description: {
+                            en:'Knowing their weaknesses lets you attack more efficiently. 5% increase to hit chance and damage dealt to VATS targets.(Nuka-World DLC)',
+                            fr:'Connaître leurs faiblesses vous permet d\'attaquer plus efficacement. Chances de toucher la cible et dégâts infligés aux cibles SVAV augmentés de 5%.(Nuka-World DLC)'
+                        },
                     }
                 ]
             },
             {
                 rank: 4,
-                name: lang[userLang].pe.l4.name,
+                name: {
+                    en:'Locksmith',
+                    fr:'Serrurier'
+                },
                 img: 'locksmith.png',
                 ranks: 4,
                 ranked: [
@@ -410,7 +604,10 @@ const perks = [
             },
             {
                 rank: 5,
-                name: lang[userLang].pe.l5.name,
+                name: {
+                    en:'Demolition Expert',
+                    fr:'Expert en démolition'
+                },
                 img: 'demolition-expert.png',
                 ranks: 4,
                 ranked: [
@@ -450,7 +647,10 @@ const perks = [
             },
             {
                 rank: 6,
-                name: lang[userLang].pe.l6.name,
+                name: {
+                    en:'Night Person',
+                    fr:'Nyctalope'
+                },
                 img: 'night-person.png',
                 ranks: 3,
                 ranked: [
