@@ -1,5 +1,5 @@
-console.log('DEBUGFR');
-constfr = {
+console.log('DEBUG EN');
+const en = {
     st: {
         l1: {
             name: 'Iron Fist',
