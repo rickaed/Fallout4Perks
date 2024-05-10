@@ -138,7 +138,6 @@ const fr ={
             rank2:'En mode SVAV, chaque attaque visant la même partie du corps bénéficie d\'un bonus de précision de 15%.',
             rank3:'En mode SVAV, chaque attaque visant la même partie du corps bénéficie d\'un bonus de précision de 20% et inflige 20% de dégâts supplémentaires.'
         }
-        
     },
     en:{
         l1:{
@@ -259,7 +258,6 @@ const fr ={
             rank1:'Domptez le monde post-apocalyptique! Vous pouvez tenter de pacifier une créature des Terres désolées d\'un niveau inférieur au vôtre en pointant votre arme sur elle.',
             rank2:'Quand vous arrivez à pacifier une créature des Terres désolées, vous pouvez l\'inciter à attaquer.',
             rank3:'Quand vous arrivez à pacifier une créature des Terres désolées, vous pouvez lui donner des ordres précis.'
-            
         },
         l10:{
             name: 'Intimidation',
@@ -335,7 +333,6 @@ const fr ={
         }
     },
     ag:{
-        
         l1:{
             name: 'Pistolero',
             rank1:'Retrouvez l\'esprit de la conquête de l\'Ouest! Les pistolets non automatiques infligent 20% de dégâts supplémentaires.',
