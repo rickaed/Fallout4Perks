@@ -1,5 +1,3 @@
-console.log('DEBUG PERK');
-console.log('perk =>', lang[userLang].st.l1.name);
 const perks = [
     {
         special: 'st',

@@ -1,4 +1,3 @@
-console.log('DEBUG FR');
 const fr = {
     st: {
         l1: {

@@ -1,4 +1,3 @@
-console.log('DEBUG EN');
 const en = {
     st: {
         l1: {
