@@ -28,7 +28,6 @@
                 
                 const title = perk.ranked.map(function (rank) {
                     const rankClass = perk.currentRank >= rank.rank ? 'has-rank' : 'no-rank';
-                    console.log('verif ',i,':',j,' => ',rank.description);
                     return '<p class=' + rankClass + '>Rank ' + rank.rank + ' (' + rank.level + '): ' + rank.description + '</p>';
                 }).join('');
                 
